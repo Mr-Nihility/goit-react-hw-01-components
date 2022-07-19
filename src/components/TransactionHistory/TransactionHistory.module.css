@@ -19,11 +19,13 @@
   background-color: rgba(0, 0, 255, 0.5);
 }
 .body:nth-child(even) {
-  background-color: rgba(21, 133, 74, 0.5);
+  background-color: rgba(33, 37, 35, 0.5);
 }
-
+.body:nth-child(even) {
+  background-color: rgba(169, 176, 172, 0.5);
+}
 .row {
   width: 500px;
   height: 60px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
