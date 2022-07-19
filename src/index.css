@@ -7,22 +7,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: repeating-radial-gradient(
+    #1e2025,
+    #1e2025 100px,
+    #9f0b0b 100px,
+    #9f0b0b 200px
+  );
+}
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.status {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-.status.true {
-  background-color: green;
-}
-.status.false {
-  background-color: red;
 }

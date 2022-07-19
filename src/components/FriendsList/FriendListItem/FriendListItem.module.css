@@ -1,0 +1,27 @@
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+.status {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.online {
+  composes: status;
+  background-color: green;
+}
+.offline {
+  composes: status;
+  background-color: red;
+}
+.avatar {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 70px;
+  height: 70px;
+}

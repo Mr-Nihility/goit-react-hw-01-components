@@ -1,23 +1,24 @@
 import PropTypes from 'prop-types';
+import css from './TransactionHistory.module.css';
 //------------------------------------------------------//
 export const TransactionHistory = ({ items }) => {
   return (
-    <table class="transaction-history">
-      <thead>
+    <table className={css.table}>
+      <thead className={css.head}>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={css.row}>Type</th>
+          <th className={css.row}>Amount</th>
+          <th className={css.row}>Currency</th>
         </tr>
       </thead>
 
       <tbody>
         {items.map(({ id, type, amount, currency }) => {
           return (
-            <tr key={id}>
-              <td>{type}</td>
-              <td>{amount}</td>
-              <td>{currency}</td>
+            <tr key={id} className={css.body}>
+              <td className={css.row}>{type}</td>
+              <td className={css.row}>{amount}</td>
+              <td className={css.row}>{currency}</td>
             </tr>
           );
         })}
